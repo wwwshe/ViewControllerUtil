@@ -8,9 +8,9 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ViewControllerUtil'
-  s.version          = '0.1.2'
+  s.version          = '0.1.3'
   s.summary          = 'ViewControllerUtil'
-  s.swift_versions = ['4.0', '5.0']
+
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
 #   * Try to keep it short, snappy and to the point.
@@ -26,17 +26,18 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'jungwook' => 'wwwshe1@nate.com' }
   s.source           = { :git => 'https://github.com/wwwshe/ViewControllerUtil.git', :tag => s.version.to_s }
+  s.swift_versions = ['4.0','4.2', '5.0']
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '10.0'
 
-  s.source_files = 'ViewControllerUtil/*'
+  s.source_files = 'ViewControllerUtil/Classes/**/*'
   
   # s.resource_bundles = {
   #   'ViewControllerUtil' => ['ViewControllerUtil/Assets/*.png']
   # }
 
-  # s.public_header_files = 'Pod/*.h'
+  # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end

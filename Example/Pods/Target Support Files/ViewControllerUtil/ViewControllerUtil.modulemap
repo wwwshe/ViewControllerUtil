@@ -1,0 +1,6 @@
+framework module ViewControllerUtil {
+  umbrella header "ViewControllerUtil-umbrella.h"
+
+  export *
+  module * { export * }
+}
