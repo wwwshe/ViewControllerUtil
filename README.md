@@ -20,6 +20,16 @@ it, simply add the following line to your Podfile:
 pod 'ViewControllerUtil'
 ```
 
+## Usage 
+1. StoryBoard -> ViewController -> Show the Identity Inspector -> Identity -> Storyboard Id Set ViewController FileName
+2. SourceCode
+```swift
+ let viewUtil = ViewControllerUtil()
+ let controller = viewUtil.getViewController(target: ViewController.self)
+ or
+ let controller = viewUtil.getViewController(target: ViewController.self, name : "Main")
+```
+
 ## Author
 
 jungwook, wwwshe1@nate.com
